@@ -22,7 +22,7 @@ function ReusableForm(props) {
           name='alcoholContent'
           placeholder='Alcohol Content' /><br />
         <input
-          type='text'
+          type='number'
           name='count'
           placeholder='Total Left On Tap' /><br />
         <button type='submit'>{props.buttonText}</button>

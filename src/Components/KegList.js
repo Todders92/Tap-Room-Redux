@@ -5,8 +5,10 @@ import PropTypes from "prop-types";
 function KegList(props) {
   return (
     <React.Fragment>
-     {Object.values(props.kegList).map((keg) => {
-        return <Keg 
+      {props.kegList.map((keg) =>
+        <Keg
+          whenSellClicked = {props.onClickingSell}
+          whenRefillClicked = {props.onClickingRefill} 
           whenKegClicked={ props.onKegSelection }
           name={keg.name}
           brand={keg.brand}
@@ -15,13 +17,13 @@ function KegList(props) {
           count={keg.count}
           id={keg.id}
           key={keg.id} />
-     })}
+      )}
     </React.Fragment>
   );
 }
 
 KegList.propTypes = {
-  kegList: PropTypes.object,
+  kegList: PropTypes.array,
   onKegSelection: PropTypes.func
 };
 
