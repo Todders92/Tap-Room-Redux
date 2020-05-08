@@ -18,7 +18,7 @@ This React application allows users to add kegs of beer to a taproom. users can 
 
 ## Component Diagram
 
-![Component Map](src\ComponentDiagram.png)
+![Component Map](src/ComponentDiagram.png)
 
 ## Setup/Installation Requirements
 
